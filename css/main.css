@@ -11,7 +11,27 @@
 }
 
 body {
+	color: #fff;
 	background-color: #010101;
 	font-family: raleway_f, sans-serif;
 	line-height: 1.55;
+}
+
+.main-header {
+	position: relative;
+}
+
+.layers {
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+}
+.layer {
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	background-size: cover;
+	background-position: center;
 }
