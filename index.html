@@ -9,7 +9,7 @@
 	<title>Parallax~Scroll</title>
 
 	<link rel="stylesheet" href="css/main.css">
-	<link rel="stylesheet" href="css/fonts.css">
+	<link rel="stylesheet" href="css/font.css">
 
 	<script src="libs/gsap/gsap.min.js" defer></script>
 	<script src="libs/gsap/ScrollTrigger.min.js" defer></script>
@@ -20,7 +20,30 @@
 </head>
 <body>
 
-	
+	<div class="wrapper">
+
+		<header class="main-header">
+			<div class="layers">
+				<div class="layers__header">
+					<div class="layers__caption">Welcome to Parallax</div>
+					<div class="layers__title">Fairy Forest</div>
+				</div>
+
+				<div class="layer layers__base" style="background-image: url(img/layer-base.png);"></div>
+				<div class="layer layers__middle" style="background-image: url(img/layer-middle.png);"></div>
+				<div class="layer layers__front" style="background-image: url(img/layer-front.png);"></div>
+			</div>
+		</header>
+
+		<article class="main-article" style="background-image: url(img/dungeon.jpg);">
+			<div class="main-article__content">
+				<h2 class="main-article__header">To be continued...</h2>
+				<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus voluptate vitae minus officia enim voluptatum adipisci ex, quasi voluptas hic eius unde laudantium? Asperiores ducimus quam quae eligendi necessitatibus. Aspernatur.</p>
+			</div>
+			<div class="copy">© Kiryakov Gleb</div>
+		</article>
+
+	</div>
 
 </body>
 </html>
