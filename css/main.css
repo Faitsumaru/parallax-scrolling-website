@@ -27,6 +27,8 @@ body {
 	align-items: center;
 	justify-content: center;
 	text-align: center;
+	overflow: hidden;
+	position: relative;
 }
 .layer {
 	height: 100%;
@@ -34,4 +36,19 @@ body {
 	position: absolute;
 	background-size: cover;
 	background-position: center;
+	will-change: transform;
+}
+
+.main-article {
+	min-height: 100vh;
+}
+
+.layers__base {
+	transform: translate3d(0, calc(var(--scrollTop) / 1.6), 0);
+}
+.layers__middle {
+	transform: translate3d(0, calc(var(--scrollTop) / 2.5), 0);
+}
+.layers__front {
+	transform: translate3d(0, calc(var(--scrollTop) / 6), 0);
 }
