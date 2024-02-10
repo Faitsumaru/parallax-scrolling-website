@@ -37,6 +37,28 @@ body {
 	background-size: cover;
 	background-position: center;
 	will-change: transform;
+	z-index: 2;
+}
+
+.layers__header {
+	z-index: 1;
+	transform: translate3d(0, calc(var(--scrollTop) / 2), 0);
+	will-change: transform;
+	text-transform: uppercase;
+	font-weight: 900;
+	word-spacing: .5cm;
+	color: #e7e7e0;
+	text-shadow: 0 0 15px #9e7d35;
+}
+
+.layers__title {
+	font-size: calc(var(--index) * 2.5);
+	letter-spacing: calc(var(--index) / 2.25);
+}
+.layers__caption {
+	font-size: calc(var(--index) / 1.5);
+	letter-spacing: calc(var(--index) / 3.5);
+	margin-top: calc(var(--index) * -.75);
 }
 
 .main-article {
@@ -45,6 +67,7 @@ body {
 
 .layers__base {
 	transform: translate3d(0, calc(var(--scrollTop) / 1.6), 0);
+	z-index: 0;
 }
 .layers__middle {
 	transform: translate3d(0, calc(var(--scrollTop) / 2.5), 0);
