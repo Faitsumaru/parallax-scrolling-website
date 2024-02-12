@@ -20,6 +20,18 @@ body {
 .main-header {
 	position: relative;
 }
+.main-header::after {
+	content: '';
+	position: absolute;
+	z-index: 100;
+	width: 100%;
+	height: calc(var(--index) * 10);
+	background-image: url(../img/ground.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	bottom: calc(var(--index) * -4.5);
+}
 
 .layers {
 	height: 100vh;
