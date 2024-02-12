@@ -86,6 +86,7 @@ body {
 
 
 .main-article {
+	--main-article-transform: translate3d(0, calc(var(--scrollTop) / -17), 0);
 	min-height: 100vh;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -109,10 +110,15 @@ body {
 	letter-spacing: calc(var(--index) / 7.5);
 	margin-bottom: calc(var(--index) * .7);
 	text-align: center;
+	transform: var(--main-article-transform);
+	will-change: transform;
 }
 .main-article__paragraph {
 	max-width: calc(var(--index) * 30);
-	font-size: calc(var(--index) * .8);
+	font-size: calc(var(--index) * .9);
+	transform: var(--main-article-transform);
+	will-change: transform;
+	text-align: center;
 }
 .copy {
 	position: absolute;
